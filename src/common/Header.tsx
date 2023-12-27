@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Header() {
   return (
     <header className="bg-white shadow-md flex items-center justify-between px-4 py-4 sticky top-0">
@@ -23,6 +25,12 @@ export default function Header() {
         >
           Latest AI News
         </a>
+        <Link
+          className="p-2 text-gray-700 font-semibold hover:text-gray-900 hover:hover:bg-slate-200 rounded-lg"
+         to="dashboard"
+        >
+         dashboard
+        </Link>
         <button className="p-2 text-gray-700 font-semibold hover:text-gray-900 hover:hover:bg-slate-200 rounded-lg">
           Join Discord
         </button>

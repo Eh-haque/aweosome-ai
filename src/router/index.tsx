@@ -5,6 +5,8 @@ import OpenLayout from "../components/layout/OpenLayout";
 import NotFound from "../common/NotFound";
 import PrivateLayout from "../components/layout/PrivateLayout";
 import Dashboard from "../pages/private/Dashboard";
+import Profile from "../pages/private/Profile";
+import ManageUsers from "../pages/private/ManageUsers";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +16,14 @@ const router = createBrowserRouter([
       {
         path: "/dashboard",
         element: <Dashboard />,
+      },
+      {
+        path: "/dashboard/profile",
+        element: <Profile />,
+      },
+      {
+        path: "/dashboard/manage-user",
+        element: <ManageUsers />,
       },
     ],
   },
