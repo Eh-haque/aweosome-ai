@@ -9,9 +9,10 @@ import { Link } from "react-router-dom";
 
 const Tool = () => {
   return (
-    <div className="grid grid-cols-4 gap-4 m-10">
+    <div className=" columns-1  sm:columns-2 md:columns-3 lg:columns-4 gap-4 m-10">
+    {/* <div className="grid grid-cols-auto sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 m-10"> */}
       {aiTools.map((tool, index) => (
-        <div key={index} className="rounded-lg border shadow-sm">
+        <div key={index} className="my-2 rounded-lg border shadow-sm inline-block w-full">
           {/* image section */}
           <div className=" w-full h-[250px] rounded-none">
             <img

@@ -26,7 +26,7 @@ export default function Banner() {
   }
 
   return (
-    <div className="grid items-center gap-6 py-10 md:py-10   mx-10">
+    <div className="grid items-center gap-6 py-10 md:py-10 mx-10">
       <div className="flex max-w-[980px] mx-auto flex-col items-center text-center gap-2">
         <h1 className="text-3xl font-bold leading-tight tracking-tighter md:text-6xl">
           Awesome AI Platform
@@ -36,11 +36,8 @@ export default function Banner() {
         </p>
       </div>
 
-      <div className="flex gap-4 justify-center">
-        <a
-          className="button"
-          href="#"
-        >
+      <div className=" md:flex gap-4 justify-center items-center text-center">
+        <a className="button my-1" href="#">
           <WrenchScrewdriverIcon
             className="text-lg mr-2"
             height="1em"
@@ -48,21 +45,14 @@ export default function Banner() {
           />
           Tools Added Today
         </a>
-        <a
-          className="button"
-          href="#"
-        >
+        <a className="button  my-1" href="#">
           <NewspaperIcon className="text-lg mr-2" height="1em" width="1em" />
           News Added Today
         </a>
       </div>
 
       <div>
-        <input
-          type="text"
-          className="search"
-          placeholder="Search Tools"
-        />
+        <input type="text" className="search" placeholder="Search Tools" />
       </div>
 
       <div className="flex items-center justify-between">
